@@ -6,6 +6,8 @@ result = 0
 #         if(k[j] > k[j+1]):
 #             k[j], k[j+1] = k[j+1], k[j]
 k.sort()
+
+# add
 for i in range(len(k)):
     for j in range(i+1):
         result += k[j]
