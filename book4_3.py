@@ -1,5 +1,3 @@
-from calendar import c
-
 
 a = input()
 l = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
