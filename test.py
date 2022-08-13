@@ -13,3 +13,9 @@ queue = deque()
 queue.append((1, 2))
 a, b = queue.popleft()
 print(a, b)
+
+
+q=deque(0)
+q.append(0)
+a=q.popleft()
+print(a)
