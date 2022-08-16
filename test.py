@@ -11,11 +11,13 @@ print(x, y, z)
 
 queue = deque()
 queue.append((1, 2))
+print(queue)
 a, b = queue.popleft()
 print(a, b)
 
 
-q=deque(0)
+q=deque([1])
 q.append(0)
+print(q)
 a=q.popleft()
 print(a)
