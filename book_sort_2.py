@@ -1,5 +1,4 @@
 import sys
-from turtle import right
 N = sys.stdin.readline().rstrip()
 array=[]
 for i in range(int(N)):
