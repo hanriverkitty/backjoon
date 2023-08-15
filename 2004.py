@@ -10,7 +10,7 @@ if a-b<b:
 # 10! 에 들어가는 2의 인수의 개수는 (10//2 = 5) + (10//4 = 2) + (10//8 = 1)
 def go(num,k):
     count=0
-    div=1
+    div=k
     while div<=num:
         count+=num//div
         div*=k
