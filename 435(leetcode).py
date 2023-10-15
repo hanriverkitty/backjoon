@@ -1,12 +1,13 @@
 class Solution:
-    def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
-        intervals.sort(key=lambda x: x[1])
-        temp = 0
-        count = 1
+    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+        n = len(temperatures)
+        stack = []
+        answer = [0] * n
 
-        for i in range(1, len(intervals)):
-            if intervals[i][0] >= intervals[temp][1]:
-                temp = i
-                count += 1
+        for cur_day, cur_temp in enumerate(temperatures):
+            while stack and temperatures[stack[-1]] < cur_temp:
+                pre_day = stack.pop()
+                answer[pre_day] = cur_day - pre_day
 
-        return len(intervals) - count
+            stack.append(cur_day)
+        return answer
