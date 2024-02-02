@@ -1,2 +1,4 @@
 .idea
-softeer/.idea
+/softeer/.idea
+.vscode
+__pycache__
